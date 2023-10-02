@@ -10,7 +10,7 @@ import { ApiService } from '../services/api.service';
 })
 export class UserDetailComponent implements OnInit {
 
-  userId!: number
+  userId!: string
   userDetail!: User
 
   constructor(private activatedRoute: ActivatedRoute, private api: ApiService) {}
@@ -22,7 +22,7 @@ export class UserDetailComponent implements OnInit {
     })
   }
 
-  fetchUserDetails(userID: number) {
+  fetchUserDetails(userID: string) {
     this.api.getRegisteredUserId(userID).subscribe(res => {
       this.userDetail = res
     })

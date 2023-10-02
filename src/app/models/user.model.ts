@@ -13,5 +13,5 @@ export class User{
     important!: string[]
     haveGymBefore!: string
     enquiryDate!: string
-    id!: number
+    id!: string
 }

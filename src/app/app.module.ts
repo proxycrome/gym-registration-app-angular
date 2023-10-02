@@ -26,6 +26,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
+import { ShortenPipe } from './pipes/shorten.pipe';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {MatChipsModule} from '@angular/material/chips';
     CreateRegistrationComponent,
     RegistrationListComponent,
     UserDetailComponent,
+    ShortenPipe
   ],
   imports: [
     BrowserModule,
